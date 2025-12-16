@@ -112,7 +112,7 @@ export default function SafetySecuritySection() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 text-[10px] md:text-xs leading-5 text-white/40 max-w-4xl mx-auto text-center">
+        <div className="mt-12 pt-8 border-t border-white/10 text-[10px] md:text-xs leading-5 text-white max-w-4xl mx-auto text-center">
           <p>
             *Your funds are held with FDIC-insured depository institutions, not with Robora. Robora is not a bank. Banking services are provided by OMB Bank, member FDIC, and deposits are placed through IntraFi&apos;s ICS service. Certain conditions must be satisfied for &quot;pass-through&quot; FDIC deposit insurance coverage to apply.
           </p>

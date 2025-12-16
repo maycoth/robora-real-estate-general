@@ -39,7 +39,7 @@ export default function DashboardSection() {
                 'Complete transaction history',
                 'Cash flow charts and visualizations',
                 'Property-level breakdowns',
-                'Export reports for accounting',
+                'Export statements for accounting',
               ].map((feature, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-[#FFC700] rounded-full"></div>

@@ -36,8 +36,8 @@ const accountTypes = [
     description: 'Park capital reserves, CapEx funds, and insurance reserves',
     features: [
       'Perfect for long-term reserves',
-      'Instant access when needed',
-      'Higher yields than CDs',
+      'Same day ACH transfers for liquidity',
+      'Higher yields than traditional banks',
       'No lock-up periods',
     ],
     color: '#10B981',
@@ -57,7 +57,7 @@ export default function AccountTypesSection() {
             Three Ways to Put Your Funds to Work
           </h2>
           <p className="text-[#6B7280] text-lg max-w-2xl mx-auto">
-            Whether it&apos;s tenant deposits, operating cash, or reserve funds—we have a high-yield solution for every dollar you manage.
+            Whether it&apos;s tenant deposits, operating cash, or reserve funds, we have a high-yield solution for every dollar you manage.
           </p>
         </div>
 
