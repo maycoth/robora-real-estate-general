@@ -102,10 +102,11 @@ export default function Footer() {
         <div className="border-t border-white/20 pt-10 space-y-8">
           
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-gray-300">
-            <div className="space-y-1">
-               <p className="font-medium text-white text-base">support@roborafinancial.com</p>
-            </div>
-            <p>© Robora Financial, LLC. All rights reserved.</p>
+              <div className="space-y-1">
+                 <p className="font-medium text-white text-base">support@roborafinancial.com</p>
+              </div>
+              <p className="text-white">© Robora Financial, LLC. All rights reserved.</p>
+
           </div>
 
           <div className="text-[11px] md:text-xs leading-relaxed space-y-4 border-t border-white/10 pt-8" style={{ color: 'white' }}>
