@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown, Menu } from 'lucide-react';
@@ -9,8 +10,18 @@ const ASSETS = {
 };
 
 export default function NavigationHeader() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 h-[80px] w-full bg-transparent px-6 lg:px-10 py-5 transition-all duration-300">
+    <header className={`fixed top-0 left-0 right-0 z-50 h-[80px] w-full px-6 lg:px-10 py-5 transition-all duration-300 ${
+      scrolled ? "bg-[#003D7A]/90 backdrop-blur-md shadow-lg" : "bg-transparent"
+    }`}>
       <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between">
         <Link href="/" className="relative block h-[40px] w-[142px] shrink-0 hover:opacity-90 transition-opacity">
           <Image 
