@@ -15,12 +15,12 @@ export default function PricingCTASection() {
   return (
     <section id="pricing" className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-10 max-w-[1280px]">
-        <div className="relative overflow-hidden rounded-[24px] md:rounded-[32px] bg-[#003D7A] text-white shadow-xl">
+          <div className="relative overflow-hidden rounded-[24px] md:rounded-[32px] bg-[#013A6F] text-white shadow-xl">
           <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
             <div 
               className="absolute -left-[50px] -top-[50px] h-[300px] w-[300px] md:-left-[20px] md:-top-[60px] md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[600px]"
               style={{
-                backgroundColor: '#FFC700',
+                  backgroundColor: '#FFCA40',
                 borderRadius: '80px',
                 transform: 'rotate(15deg) translateX(-30%)',
                 opacity: 1,
@@ -29,7 +29,7 @@ export default function PricingCTASection() {
             <div 
               className="absolute -bottom-[100px] -left-[80px] h-[350px] w-[350px] md:-bottom-[150px] md:-left-[50px] md:h-[550px] md:w-[550px]"
               style={{
-                backgroundColor: '#2E7FD6',
+                  backgroundColor: '#013A6F',
                 borderRadius: '100px',
                 transform: 'rotate(45deg)',
                 opacity: 1,
@@ -44,7 +44,7 @@ export default function PricingCTASection() {
             <div className="flex flex-col gap-8 lg:col-span-7">
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full">
-                  <Building2 className="w-4 h-4 text-[#FFC700]" />
+                  <Building2 className="w-4 h-4 text-[#FFCA40]" />
                   <span className="text-sm font-medium">For Apartment Management Companies</span>
                 </div>
 
@@ -55,7 +55,7 @@ export default function PricingCTASection() {
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-4">
                   <div className="flex items-baseline gap-3">
                     <span className="text-xl font-normal md:text-2xl">Earn</span>
-                    <span className="text-5xl font-bold text-[#FFC700] md:text-[64px] leading-none">
+                      <span className="text-5xl font-bold text-[#FFCA40] md:text-[64px] leading-none">
                       3.11%
                     </span>
                     <span className="relative top-0 text-xl font-semibold md:text-2xl">
@@ -84,10 +84,10 @@ export default function PricingCTASection() {
               <div className="h-px w-full bg-white/20" />
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                      href="https://roborafinancial.com/book-a-demo"
-                      className="group flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-[#003D7A] bg-[#FFC700] rounded-lg hover:bg-[#FFD740] transition-all duration-300 shadow-lg"
-                    >
+                    <Link
+                        href="https://roborafinancial.com/book-a-demo"
+                        className="group flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-[#013A6F] bg-[#FFCA40] rounded-lg hover:bg-[#EBAA00] transition-all duration-300 shadow-lg"
+                      >
                       <Mail className="w-5 h-5" />
                       Schedule a Demo
                     </Link>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#003D7A] text-white pt-16 pb-8 md:pt-24 md:pb-12">
+    <footer className="bg-[#013A6F] text-white pt-16 pb-8 md:pt-24 md:pb-12">
       <div className="container mx-auto px-6 md:px-10 lg:px-12 max-w-[1280px]">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-16 lg:mb-24">
           
@@ -22,10 +22,10 @@ export default function Footer() {
               <h2 className="text-[28px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-white">
                 Want to give your excess cash a boost?
               </h2>
-                <Link
-                  href="https://app.roborafinancial.com/signup" 
-                  className="inline-flex items-center justify-center bg-[#FFC700] text-[#003D7A] font-semibold text-base px-6 py-3 rounded-lg shadow-md hover:bg-[#FFB300] hover:-translate-y-0.5 transition-all duration-300 ease-in-out"
-                >
+                  <Link
+                    href="https://app.roborafinancial.com/signup" 
+                    className="inline-flex items-center justify-center bg-[#FFCA40] text-[#013A6F] font-semibold text-base px-6 py-3 rounded-lg shadow-md hover:bg-[#EBAA00] hover:-translate-y-0.5 transition-all duration-300 ease-in-out"
+                  >
                   Get Started
                 </Link>
             </div>
@@ -37,22 +37,22 @@ export default function Footer() {
               <h3 className="font-bold text-lg md:text-xl text-white">Quick links</h3>
               <ul className="flex flex-col space-y-4">
                 <li>
-                  <Link href="https://roborafinancial.com/" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="https://roborafinancial.com/" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://roborafinancial.com/how-it-works" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="https://roborafinancial.com/how-it-works" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     How it works
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://roborafinancial.com/who-we-are" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="https://roborafinancial.com/who-we-are" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     Who we are
                   </Link>
                 </li>
                 <li>
-                  <Link href="#pricing" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="#pricing" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     Pricing
                   </Link>
                 </li>
@@ -63,17 +63,17 @@ export default function Footer() {
               <h3 className="font-bold text-lg md:text-xl text-white">Resources</h3>
               <ul className="flex flex-col space-y-4">
                 <li>
-                  <Link href="https://roborafinancial.com/get-help" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="https://roborafinancial.com/get-help" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     FAQs
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://roborafinancial.com/blogs" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="https://roborafinancial.com/blogs" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     Blogs
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://roborafinancial.com/contact-us" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="https://roborafinancial.com/contact-us" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     Contact Us
                   </Link>
                 </li>
@@ -84,12 +84,12 @@ export default function Footer() {
               <h3 className="font-bold text-lg md:text-xl text-white">Disclaimer</h3>
               <ul className="flex flex-col space-y-4">
                 <li>
-                  <Link href="https://roborafinancial.com/policy/privacy" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="https://roborafinancial.com/policy/privacy" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     Privacy policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://roborafinancial.com/policy/terms-of-service" className="text-base text-gray-200 hover:text-[#FFC700] transition-colors">
+                    <Link href="https://roborafinancial.com/policy/terms-of-service" className="text-base text-gray-200 hover:text-[#FFCA40] transition-colors">
                     Terms of Service
                   </Link>
                 </li>

@@ -44,47 +44,47 @@ export default function CalculatorSection() {
             <AlertCircle className="w-4 h-4" />
             The Hidden Cost of Low-Yield Accounts
           </span>
-          <h2 className="text-[#003D7A] text-3xl md:text-[44px] leading-[1.2] font-bold max-w-[900px] mx-auto mb-4">
+          <h2 className="text-[#013A6F] text-3xl md:text-[44px] leading-[1.2] font-bold max-w-[900px] mx-auto mb-4">
             Your Deposits Are Working for Banks, Not You
           </h2>
-          <p className="text-[#6B7280] text-lg max-w-2xl mx-auto">
+          <p className="text-[#4B4F53] text-lg max-w-2xl mx-auto">
             Most property managers leave millions in security deposits and reserves earning near-zero interest. See what you&apos;re missing.
           </p>
         </div>
 
-        <div className="bg-[#F5F7FA] rounded-3xl p-8 md:p-12">
+          <div className="bg-[#F4F5F5] rounded-3xl p-8 md:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <label className="block text-sm font-semibold text-[#003D7A] mb-3">
-                Total Security Deposits & Reserves
-              </label>
-              <div className="relative mb-8">
-                <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#6B7280]" />
-                <input
-                  type="text"
-                  value={calculations.numAmount.toLocaleString()}
-                  onChange={handleAmountChange}
-                  className="w-full h-14 py-3 pl-12 pr-4 text-2xl font-bold border-2 border-[#E5E7EB] rounded-xl outline-none transition-all text-[#003D7A] focus:border-[#2E7FD6] focus:ring-4 focus:ring-[#2E7FD6]/10 bg-white"
-                />
-              </div>
+              <label className="block text-sm font-semibold text-[#013A6F] mb-3">
+                  Total Security Deposits & Reserves
+                </label>
+                <div className="relative mb-8">
+                  <DollarSign className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#4B4F53]" />
+                  <input
+                    type="text"
+                    value={calculations.numAmount.toLocaleString()}
+                    onChange={handleAmountChange}
+                    className="w-full h-14 py-3 pl-12 pr-4 text-2xl font-bold border-2 border-[#D4D6D8] rounded-xl outline-none transition-all text-[#013A6F] focus:border-[#013A6F] focus:ring-4 focus:ring-[#013A6F]/10 bg-white"
+                  />
+                </div>
 
-              <div className="space-y-4">
-                <div className="flex items-center justify-between p-4 bg-white rounded-xl border border-[#E5E7EB]">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
-                    <span className="text-[#6B7280] text-sm">Typical Bank (0.25% APY)</span>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between p-4 bg-white rounded-xl border border-[#D4D6D8]">
+                    <div className="flex items-center gap-3">
+                      <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
+                      <span className="text-[#4B4F53] text-sm">Typical Bank (0.25% APY)</span>
+                    </div>
+                    <span className="font-bold text-[#1A1B1D]">{formatCurrency(calculations.bankEarnings)}/yr</span>
                   </div>
-                  <span className="font-bold text-[#1F2937]">{formatCurrency(calculations.bankEarnings)}/yr</span>
-                </div>
-                
-                <div className="flex items-center justify-between p-4 bg-[#003D7A] rounded-xl">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-[#FFC700] rounded-full"></div>
-                    <span className="text-white text-sm">Robora (3.11% APY)</span>
+                  
+                  <div className="flex items-center justify-between p-4 bg-[#013A6F] rounded-xl">
+                    <div className="flex items-center gap-3">
+                      <div className="w-3 h-3 bg-[#FFCA40] rounded-full"></div>
+                      <span className="text-white text-sm">Robora (3.11% APY)</span>
+                    </div>
+                    <span className="font-bold text-[#FFCA40] text-lg">{formatCurrency(calculations.roboraEarnings)}/yr</span>
                   </div>
-                  <span className="font-bold text-[#FFC700] text-lg">{formatCurrency(calculations.roboraEarnings)}/yr</span>
                 </div>
-              </div>
             </div>
 
             <div className="flex flex-col items-center justify-center text-center">
@@ -92,15 +92,15 @@ export default function CalculatorSection() {
                 <div className="absolute inset-0 bg-[#10B981]/20 rounded-full blur-3xl"></div>
                 <div className="relative bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-[#10B981]/20">
                   <TrendingUp className="w-10 h-10 text-[#10B981] mx-auto mb-4" />
-                  <p className="text-sm font-medium text-[#6B7280] mb-2">You&apos;re Missing Out On</p>
+                  <p className="text-sm font-medium text-[#4B4F53] mb-2">You&apos;re Missing Out On</p>
                   <p className="text-4xl md:text-5xl font-bold text-[#10B981] mb-2">
                     {formatCurrency(calculations.difference)}
                   </p>
-                  <p className="text-sm text-[#6B7280]">per year in potential earnings</p>
+                  <p className="text-sm text-[#4B4F53]">per year in potential earnings</p>
                 </div>
               </div>
               
-              <p className="mt-8 text-sm text-[#6B7280] max-w-sm">
+              <p className="mt-8 text-sm text-[#4B4F53] max-w-sm">
                 This calculation assumes constant balance and rates. Actual earnings may vary.
               </p>
             </div>

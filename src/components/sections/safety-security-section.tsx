@@ -2,10 +2,10 @@ import { Shield, Building2, Lock } from 'lucide-react';
 
 export default function SafetySecuritySection() {
   return (
-    <section className="bg-[#003D7A] text-white py-20 md:py-28">
+    <section className="bg-[#013A6F] text-white py-20 md:py-28">
       <div className="container mx-auto px-4 md:px-10 max-w-[1280px]">
         <div className="text-center mb-16">
-          <span className="text-[#FFC700] font-semibold text-sm tracking-wider uppercase mb-4 block">
+          <span className="text-[#FFCA40] font-semibold text-sm tracking-wider uppercase mb-4 block">
             Security You Can Trust
           </span>
           <h2 className="text-3xl md:text-[44px] font-bold leading-[1.2] text-white max-w-3xl mx-auto mb-4">
@@ -25,13 +25,13 @@ export default function SafetySecuritySection() {
                 <div className="h-20 bg-white/20 rounded-lg"></div>
               </div>
               <div className="flex-1">
-                <p className="text-[#FFC700] text-sm mb-2">With Robora</p>
-                <p className="text-[#FFC700] font-bold text-xl mb-3">$10M+</p>
-                <div className="h-48 bg-gradient-to-t from-[#FFC700] to-[#FFD740] rounded-lg relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Shield className="w-12 h-12 text-[#003D7A]" />
+                <p className="text-[#FFCA40] text-sm mb-2">With Robora</p>
+                  <p className="text-[#FFCA40] font-bold text-xl mb-3">$10M+</p>
+                  <div className="h-48 bg-gradient-to-t from-[#FFCA40] to-[#EBAA00] rounded-lg relative">
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Shield className="w-12 h-12 text-[#013A6F]" />
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
             <p className="text-white/70 text-sm">
@@ -40,10 +40,10 @@ export default function SafetySecuritySection() {
           </div>
 
           <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-[#FFC700]/20 rounded-xl flex items-center justify-center shrink-0">
-                <Shield className="w-6 h-6 text-[#FFC700]" />
-              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-[#FFCA40]/20 rounded-xl flex items-center justify-center shrink-0">
+                  <Shield className="w-6 h-6 text-[#FFCA40]" />
+                </div>
               <div>
                 <h3 className="text-lg font-semibold text-white mb-2">Extended FDIC Coverage</h3>
                 <p className="text-white/70">
@@ -52,10 +52,10 @@ export default function SafetySecuritySection() {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-[#2E7FD6]/20 rounded-xl flex items-center justify-center shrink-0">
-                <Building2 className="w-6 h-6 text-[#2E7FD6]" />
-              </div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-[#FFCA40]/20 rounded-xl flex items-center justify-center shrink-0">
+                  <Building2 className="w-6 h-6 text-[#FFCA40]" />
+                </div>
               <div>
                 <h3 className="text-lg font-semibold text-white mb-2">Trusted Bank Partners</h3>
                 <p className="text-white/70">

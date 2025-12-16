@@ -23,13 +23,13 @@ export default function DashboardSection() {
       <div className="container mx-auto px-4 md:px-10 max-w-[1280px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
-            <span className="text-[#2E7FD6] font-semibold text-sm tracking-wider uppercase mb-4 block">
-              Unified Dashboard
-            </span>
-            <h2 className="text-[#003D7A] text-3xl md:text-[44px] leading-[1.2] font-bold mb-6">
+          <span className="text-[#013A6F] font-semibold text-sm tracking-wider uppercase mb-4 block">
+            Unified Dashboard
+          </span>
+          <h2 className="text-[#013A6F] text-3xl md:text-[44px] leading-[1.2] font-bold mb-6">
               All Your Accounts.<br />One View.
             </h2>
-            <p className="text-[#6B7280] text-lg mb-8 leading-relaxed">
+            <p className="text-[#4B4F53] text-lg mb-8 leading-relaxed">
               See balances, transactions, and cash flow across all properties in a single dashboard. No more juggling multiple bank logins or spreadsheets.
             </p>
             
@@ -41,27 +41,27 @@ export default function DashboardSection() {
                 'Property-level breakdowns',
                 'Export statements for accounting',
               ].map((feature, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-[#FFC700] rounded-full"></div>
+                  <div key={index} className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-[#FFCA40] rounded-full"></div>
                   <span className="text-[#4B5563]">{feature}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#003D7A]/5 to-[#2E7FD6]/5 rounded-3xl blur-2xl"></div>
-            <div className="relative bg-white rounded-2xl shadow-2xl border border-[#E5E7EB] overflow-hidden">
-              <div className="bg-[#003D7A] px-6 py-4 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-[#FFC700] rounded-full"></div>
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#013A6F]/5 to-[#013A6F]/5 rounded-3xl blur-2xl"></div>
+              <div className="relative bg-white rounded-2xl shadow-2xl border border-[#D4D6D8] overflow-hidden">
+                <div className="bg-[#013A6F] px-6 py-4 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="w-3 h-3 bg-[#FFCA40] rounded-full"></div>
                   <span className="text-white font-semibold">Robora Dashboard</span>
                 </div>
                 <span className="text-white/60 text-sm">Property Overview</span>
               </div>
               
-              <div className="p-6">
-                <div className="bg-gradient-to-r from-[#003D7A] to-[#0A5BA8] rounded-xl p-5 mb-6">
+                <div className="p-6">
+                  <div className="bg-gradient-to-r from-[#013A6F] to-[#001C35] rounded-xl p-5 mb-6">
                   <p className="text-white/70 text-sm mb-1">Total Balance</p>
                   <p className="text-3xl font-bold text-white mb-2">$2,239,900</p>
                   <div className="flex items-center gap-2">
@@ -70,14 +70,14 @@ export default function DashboardSection() {
                   </div>
                 </div>
 
-                <div className="mb-6">
-                  <p className="text-sm font-semibold text-[#003D7A] mb-3">By Property</p>
-                  <div className="space-y-2">
-                    {properties.map((property, index) => (
-                      <div key={index} className="flex items-center justify-between p-3 bg-[#F5F7FA] rounded-lg">
-                        <span className="text-sm text-[#4B5563]">{property.name}</span>
-                        <div className="text-right">
-                          <span className="text-sm font-semibold text-[#003D7A]">
+                  <div className="mb-6">
+                    <p className="text-sm font-semibold text-[#013A6F] mb-3">By Property</p>
+                    <div className="space-y-2">
+                      {properties.map((property, index) => (
+                        <div key={index} className="flex items-center justify-between p-3 bg-[#F4F5F5] rounded-lg">
+                          <span className="text-sm text-[#4B4F53]">{property.name}</span>
+                          <div className="text-right">
+                            <span className="text-sm font-semibold text-[#013A6F]">
                             ${property.balance.toLocaleString()}
                           </span>
                           <span className="text-xs text-[#10B981] ml-2">+${property.change}</span>
@@ -87,11 +87,11 @@ export default function DashboardSection() {
                   </div>
                 </div>
 
-                <div>
-                  <p className="text-sm font-semibold text-[#003D7A] mb-3">Recent Transactions</p>
-                  <div className="space-y-2">
-                    {transactions.map((tx, index) => (
-                      <div key={index} className="flex items-center justify-between py-2 border-b border-[#E5E7EB] last:border-0">
+                  <div>
+                    <p className="text-sm font-semibold text-[#013A6F] mb-3">Recent Transactions</p>
+                    <div className="space-y-2">
+                      {transactions.map((tx, index) => (
+                        <div key={index} className="flex items-center justify-between py-2 border-b border-[#D4D6D8] last:border-0">
                         <div className="flex items-center gap-3">
                           <div className={`w-7 h-7 rounded-full flex items-center justify-center ${tx.amount > 0 ? 'bg-[#10B981]/10' : 'bg-red-50'}`}>
                             {tx.amount > 0 ? (
@@ -101,9 +101,9 @@ export default function DashboardSection() {
                             )}
                           </div>
                           <div>
-                            <p className="text-xs font-medium text-[#1F2937]">{tx.description}</p>
-                            <p className="text-[10px] text-[#6B7280]">{tx.property}</p>
-                          </div>
+                              <p className="text-xs font-medium text-[#1A1B1D]">{tx.description}</p>
+                              <p className="text-[10px] text-[#4B4F53]">{tx.property}</p>
+                            </div>
                         </div>
                         <span className={`text-sm font-semibold ${tx.amount > 0 ? 'text-[#10B981]' : 'text-red-500'}`}>
                           {tx.amount > 0 ? '+' : ''}${Math.abs(tx.amount).toLocaleString()}

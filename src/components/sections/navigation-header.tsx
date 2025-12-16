@@ -20,7 +20,7 @@ export default function NavigationHeader() {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 h-[80px] w-full px-6 lg:px-10 py-5 transition-all duration-300 ${
-      scrolled ? "bg-[#003D7A]/90 backdrop-blur-md shadow-lg" : "bg-transparent"
+      scrolled ? "bg-[#013A6F]/90 backdrop-blur-md shadow-lg" : "bg-transparent"
     }`}>
       <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between">
         <Link href="https://roborafinancial.com/" className="relative block h-[40px] w-[142px] shrink-0 hover:opacity-90 transition-opacity">
@@ -36,24 +36,24 @@ export default function NavigationHeader() {
 
 
           <div className="hidden lg:flex items-center gap-6">
-            <a 
-              href="https://app.roborafinancial.com/login" 
-              className="text-[16px] font-semibold text-white transition-colors hover:text-[#FFC700]"
-            >
+              <a 
+                href="https://app.roborafinancial.com/login" 
+                className="text-[16px] font-semibold text-white transition-colors hover:text-[#FFCA40]"
+              >
               Login
             </a>
-          <a
-            href="https://app.roborafinancial.com/signup"
-            className="inline-flex h-[48px] items-center justify-center rounded-[8px] bg-[#FFC700] px-6 text-[16px] font-semibold text-[#003D7A] shadow-md transition-all hover:bg-[#FFB300] hover:-translate-y-0.5"
-          >
+            <a
+              href="https://app.roborafinancial.com/signup"
+              className="inline-flex h-[48px] items-center justify-center rounded-[8px] bg-[#FFCA40] px-6 text-[16px] font-semibold text-[#013A6F] shadow-md transition-all hover:bg-[#EBAA00] hover:-translate-y-0.5"
+            >
             Get Started
           </a>
         </div>
 
-        <button 
-          className="lg:hidden p-2 text-white hover:text-[#FFC700] transition-colors"
-          aria-label="Open menu"
-        >
+          <button 
+            className="lg:hidden p-2 text-white hover:text-[#FFCA40] transition-colors"
+            aria-label="Open menu"
+          >
           <Menu className="h-8 w-8" />
         </button>
       </div>

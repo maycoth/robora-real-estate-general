@@ -6,32 +6,32 @@
 
 @theme {
   --color-background: #ffffff;
-  --color-foreground: #1F2937;
+  --color-foreground: #1A1B1D;
 
   --color-card: #ffffff;
-  --color-card-foreground: #1F2937;
+  --color-card-foreground: #1A1B1D;
 
   --color-popover: #ffffff;
-  --color-popover-foreground: #1F2937;
+  --color-popover-foreground: #1A1B1D;
 
-  --color-primary: #003D7A;
+  --color-primary: #013A6F;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #F5F7FA;
-  --color-secondary-foreground: #1F2937;
+  --color-secondary: #F4F5F5;
+  --color-secondary-foreground: #1A1B1D;
 
-  --color-muted: #F5F7FA;
-  --color-muted-foreground: #6B7280;
+  --color-muted: #F4F5F5;
+  --color-muted-foreground: #4B4F53;
 
-  --color-accent: #E8F1F8;
-  --color-accent-foreground: #003D7A;
+  --color-accent: #F4F5F5;
+  --color-accent-foreground: #013A6F;
 
   --color-destructive: #ef4444;
   --color-destructive-foreground: #fafafa;
 
-  --color-border: #E5E7EB;
-  --color-input: #E5E7EB;
-  --color-ring: #2E7FD6;
+  --color-border: #D4D6D8;
+  --color-input: #D4D6D8;
+  --color-ring: #013A6F;
 
   --color-chart-1: #e67e22;
   --color-chart-2: #2d8659;
@@ -72,19 +72,23 @@
     }
   }
 
-  /* Robora Financial specific colors */
-  --color-primary-navy: #003D7A;
-  --color-secondary-navy: #0A5BA8;
-  --color-accent-yellow: #FFC700;
-  --color-accent-blue: #2E7FD6;
-  --color-light-blue-background: #E8F1F8;
+  /* Robora Financial specific colors - Brand Guidelines 2024 */
+  --color-primary-navy: #013A6F;
+  --color-primary-navy-dark: #001C35;
+  --color-secondary-navy: #013A6F;
+  --color-accent-yellow: #FFCA40;
+  --color-accent-yellow-dark: #EBAA00;
+  --color-accent-blue: #013A6F;
+  --color-light-blue-background: #F4F5F5;
   --color-white: #FFFFFF;
-  --color-light-gray: #F5F7FA;
-  --color-text-dark: #1F2937;
-  --color-text-medium: #6B7280;
+  --color-light-gray: #F4F5F5;
+  --color-neutral-gray: #D4D6D8;
+  --color-text-dark: #1A1B1D;
+  --color-text-medium: #4B4F53;
   --color-text-light: #FFFFFF;
+  --color-text-muted: #969CA1;
   --color-success-green: #10B981;
-  --color-border-light: #E5E7EB;
+  --color-border-light: #D4D6D8;
 
   /* Robora Financial specific fonts */
   --font-inter: "Inter", sans-serif;
