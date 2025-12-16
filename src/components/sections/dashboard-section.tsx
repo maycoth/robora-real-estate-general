@@ -4,10 +4,10 @@ import React from 'react';
 import { LayoutDashboard, FileText, Link2, Mail, Settings, LogOut, ChevronDown, ArrowRight } from 'lucide-react';
 
 const accounts = [
-  { initials: 'JH', name: "JS Hold Co's Business Account", total: 2857700, robora: 2157600, external: 700100, interest: 86511.85 },
-  { initials: 'JI', name: "JS Irvine LLC's Business Account", total: 3882300, robora: 3282300, external: 600000, interest: 57058.31 },
-  { initials: 'JJ', name: "JS Jupiter LLC's Business Account", total: 7904655, robora: 4904655, external: 3000000, interest: 102819.92 },
-  { initials: 'JL', name: "JS Lakeview Apts LLC's Business Account", total: 546495, robora: 446495, external: 100000, interest: 3286.26 },
+  { initials: 'SV', name: "Sunset View Apartments", total: 2857700, robora: 2157600, external: 700100, interest: 86512 },
+  { initials: 'OP', name: "Oakwood Property Group", total: 3882300, robora: 3282300, external: 600000, interest: 57058 },
+  { initials: 'HP', name: "Harbor Pointe Residences", total: 7904600, robora: 4904600, external: 3000000, interest: 102820 },
+  { initials: 'ML', name: "Maple Lane Apartments", total: 546500, robora: 446500, external: 100000, interest: 3286 },
 ];
 
 const navItems = [
@@ -117,28 +117,28 @@ export default function DashboardSection() {
 
               <div className="flex-1 bg-white p-4">
                 <div className="mb-4">
-                  <h3 className="text-sm font-semibold text-[#1A1B1D]">Welcome John Smith!</h3>
+                  <h3 className="text-sm font-semibold text-[#1A1B1D]">Welcome Sarah!</h3>
                   <p className="text-[10px] text-[#6B7280]">Here are your accounts at a glance</p>
                 </div>
 
-                <div className="grid grid-cols-4 gap-2 mb-4">
-                  <div className="bg-[#F8F9FA] rounded-lg p-2 border border-[#E5E7EB]">
-                    <p className="text-[8px] text-[#6B7280]">Total Balance</p>
-                    <p className="text-xs font-bold text-[#1A1B1D]">$18,697,950.00</p>
+                  <div className="grid grid-cols-4 gap-2 mb-4">
+                    <div className="bg-[#F8F9FA] rounded-lg p-2 border border-[#E5E7EB]">
+                      <p className="text-[8px] text-[#6B7280]">Total Balance</p>
+                      <p className="text-[10px] font-bold text-[#1A1B1D]">$15,191,100</p>
+                    </div>
+                    <div className="bg-[#F8F9FA] rounded-lg p-2 border border-[#E5E7EB]">
+                      <p className="text-[8px] text-[#6B7280]">Robora Balance</p>
+                      <p className="text-[10px] font-bold text-[#1A1B1D]">$10,791,000</p>
+                    </div>
+                    <div className="bg-[#F8F9FA] rounded-lg p-2 border border-[#E5E7EB]">
+                      <p className="text-[8px] text-[#6B7280]">External Balance</p>
+                      <p className="text-[10px] font-bold text-[#1A1B1D]">$4,400,100</p>
+                    </div>
+                    <div className="bg-[#F8F9FA] rounded-lg p-2 border border-[#E5E7EB]">
+                      <p className="text-[8px] text-[#6B7280]">Interest Earned</p>
+                      <p className="text-[10px] font-bold text-[#10B981]">$249,676</p>
+                    </div>
                   </div>
-                  <div className="bg-[#F8F9FA] rounded-lg p-2 border border-[#E5E7EB]">
-                    <p className="text-[8px] text-[#6B7280]">Total Robora Balance</p>
-                    <p className="text-xs font-bold text-[#1A1B1D]">$13,747,850.00</p>
-                  </div>
-                  <div className="bg-[#F8F9FA] rounded-lg p-2 border border-[#E5E7EB]">
-                    <p className="text-[8px] text-[#6B7280]">External Balance</p>
-                    <p className="text-xs font-bold text-[#1A1B1D]">$4,950,100.00</p>
-                  </div>
-                  <div className="bg-[#F8F9FA] rounded-lg p-2 border border-[#E5E7EB]">
-                    <p className="text-[8px] text-[#6B7280]">Interest Earned</p>
-                    <p className="text-xs font-bold text-[#10B981]">$274,857.08</p>
-                  </div>
-                </div>
 
                 <div className="mb-3 flex items-center justify-between">
                   <h4 className="text-xs font-semibold text-[#1A1B1D]">Account Summary</h4>
@@ -167,10 +167,10 @@ export default function DashboardSection() {
                         </div>
                         <span className="text-[8px] text-[#1A1B1D] truncate">{account.name}</span>
                       </div>
-                      <span className="text-[8px] text-[#1A1B1D]">${account.total.toLocaleString()}.00</span>
-                      <span className="text-[8px] text-[#1A1B1D]">${account.robora.toLocaleString()}.00</span>
-                      <span className="text-[8px] text-[#1A1B1D]">${account.external.toLocaleString()}.00</span>
-                      <span className="text-[8px] text-[#1A1B1D]">${account.interest.toLocaleString()}</span>
+                      <span className="text-[8px] text-[#1A1B1D]">${account.total.toLocaleString()}</span>
+                      <span className="text-[8px] text-[#1A1B1D]">${account.robora.toLocaleString()}</span>
+                      <span className="text-[8px] text-[#1A1B1D]">${account.external.toLocaleString()}</span>
+                      <span className="text-[8px] text-[#10B981]">${account.interest.toLocaleString()}</span>
                       <ArrowRight className="w-3 h-3 text-[#6B7280]" />
                     </div>
                   ))}
