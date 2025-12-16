@@ -43,7 +43,7 @@ export default function DashboardSection() {
               ].map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-[#FFCA40] rounded-full"></div>
-                  <span className="text-[#4B5563]">{feature}</span>
+                  <span className="text-[#4B4F53]">{feature}</span>
                 </div>
               ))}
             </div>

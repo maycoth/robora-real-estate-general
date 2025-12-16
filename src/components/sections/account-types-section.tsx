@@ -91,7 +91,7 @@ export default function AccountTypesSection() {
                     >
                       <Check className="w-3 h-3" style={{ color: account.color }} strokeWidth={3} />
                     </div>
-                    <span className="text-sm text-[#4B5563]">{feature}</span>
+                    <span className="text-sm text-[#4B4F53]">{feature}</span>
                   </div>
                 ))}
               </div>
