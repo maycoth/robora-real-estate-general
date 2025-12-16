@@ -31,7 +31,7 @@ export default function TrustedByCarousel() {
 
       <div className="container mx-auto px-4 mb-8">
         <p className="text-center text-base sm:text-lg font-normal text-muted-foreground tracking-wide">
-          Trusted by Property Managers Across the Country
+          Trusted by Property Managers Nationwide
         </p>
       </div>
 

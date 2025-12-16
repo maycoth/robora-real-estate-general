@@ -1,20 +1,19 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import Link from 'next/link';
+import { Check, Building2, Phone, Mail } from 'lucide-react';
 
-const featuresCol1 = [
-  "Free Cash Analytics and Management Tool",
-  "Unlimited Transfers",
-  "Free Same Day ACH",
-];
-
-const featuresCol2 = [
-  "Free Standard ACH",
-  "$25 per Wire Transfer - standard cost from banking partner",
+const features = [
+  "High-yield accounts for all fund types",
+  "Tens of millions in FDIC coverage",
+  "Unified dashboard for all properties",
+  "No change to existing banking",
+  "Free cash analytics tools",
+  "Unlimited transfers",
 ];
 
 export default function PricingCTASection() {
   return (
-    <section id="pricing" className="bg-white py-12 md:py-24">
+    <section id="contact" className="bg-white py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-10 max-w-[1280px]">
         <div className="relative overflow-hidden rounded-[24px] md:rounded-[32px] bg-[#003D7A] text-white shadow-xl">
           <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
@@ -43,11 +42,14 @@ export default function PricingCTASection() {
             <div className="hidden lg:col-span-5 lg:block" aria-hidden="true" />
 
             <div className="flex flex-col gap-8 lg:col-span-7">
-              
               <div className="space-y-6">
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full">
+                  <Building2 className="w-4 h-4 text-[#FFC700]" />
+                  <span className="text-sm font-medium">For Apartment Management Companies</span>
+                </div>
+
                 <h2 className="text-3xl font-bold leading-[1.2] md:text-5xl lg:text-[52px]">
-                  Automate your cash. <br className="hidden lg:block" />
-                  Invest more. Earn more.
+                  Start Earning More on Every Dollar You Manage
                 </h2>
 
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-4">
@@ -64,73 +66,47 @@ export default function PricingCTASection() {
                     on all balances
                   </span>
                 </div>
-
-                <p className="text-sm font-medium text-white/90">
-                  *$10K minimum initial deposit
-                </p>
               </div>
 
-              <div className="h-px w-full bg-[#E5E7EB]/20" />
+              <div className="h-px w-full bg-white/20" />
 
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
-                <div className="flex flex-col gap-4">
-                  {featuresCol1.map((feature, idx) => (
-                    <FeatureItem key={`col1-${idx}`} text={feature} />
-                  ))}
-                </div>
-                <div className="flex flex-col gap-4">
-                  {featuresCol2.map((feature, idx) => (
-                    <FeatureItem key={`col2-${idx}`} text={feature} />
-                  ))}
-                </div>
-              </div>
-
-              <div className="h-px w-full bg-[#E5E7EB]/20" />
-
-              <div className="space-y-6">
-                <h4 className="text-sm font-medium uppercase tracking-wide opacity-80">
-                  Monthly Fees
-                </h4>
-
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
-                  <div className="space-y-1">
-                    <div className="text-lg font-bold">For $100K or greater</div>
-                    <p className="text-sm leading-relaxed text-white/90">
-                      average monthly balances,<br />
-                      <span className="font-semibold text-white">$0/month fees</span>
-                    </p>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                {features.map((feature, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#10B981]">
+                      <Check className="h-3 w-3 text-white stroke-[3px]" />
+                    </div>
+                    <span className="text-sm font-medium text-white/90">{feature}</span>
                   </div>
-
-                  <div className="space-y-1">
-                    <div className="text-lg font-bold">For less than $100K</div>
-                    <p className="text-sm leading-relaxed text-white/90">
-                      average monthly balances,<br />
-                      <span className="font-semibold text-white">$15/month fees</span> after a 30-day trial<sup className="text-[10px]">3</sup>
-                    </p>
-                  </div>
-                </div>
-
-                <p className="max-w-xl text-xs leading-relaxed text-white/60">
-                  The fee enables us to offer the highest rate on smaller balances.
-                </p>
+                ))}
               </div>
+
+              <div className="h-px w-full bg-white/20" />
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="mailto:contact@roborafinancial.com"
+                  className="group flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-[#003D7A] bg-[#FFC700] rounded-lg hover:bg-[#FFD740] transition-all duration-300 shadow-lg"
+                >
+                  <Mail className="w-5 h-5" />
+                  Schedule a Demo
+                </Link>
+                <Link
+                  href="tel:+1234567890"
+                  className="group flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white bg-white/10 border border-white/30 rounded-lg hover:bg-white/20 transition-all duration-300"
+                >
+                  <Phone className="w-5 h-5" />
+                  Call Us
+                </Link>
+              </div>
+
+              <p className="text-xs text-white/50">
+                *$10K minimum initial deposit. $0/month for balances over $100K. $15/month for balances under $100K after 30-day trial.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
-}
-
-function FeatureItem({ text }: { text: string }) {
-  return (
-    <div className="flex items-start gap-3">
-      <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#10B981]">
-        <Check className="h-3.5 w-3.5 text-white stroke-[3px]" />
-      </div>
-      <span className="text-[15px] font-medium leading-tight text-white md:text-base">
-        {text}
-      </span>
-    </div>
   );
 }
