@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -101,13 +102,16 @@ export default function Footer() {
 
         <div className="border-t border-white/20 pt-10 space-y-8">
           
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-gray-300">
-              <div className="space-y-1">
-                 <a href="mailto:support@roborafinancial.com" className="font-medium text-white text-base hover:text-[#FFCA40] transition-colors">support@roborafinancial.com</a>
-              </div>
-              <p className="text-white">© Robora Financial, LLC. All rights reserved.</p>
+<div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-sm text-gray-300">
+                <div className="flex items-center gap-4">
+                   <a href="mailto:support@roborafinancial.com" className="font-medium text-white text-base hover:text-[#FFCA40] transition-colors">support@roborafinancial.com</a>
+                   <a href="https://www.linkedin.com/company/robora-financial/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#FFCA40] transition-colors">
+                     <Linkedin className="w-5 h-5" />
+                   </a>
+                </div>
+                <p className="text-white">© Robora Financial, LLC. All rights reserved.</p>
 
-          </div>
+            </div>
 
           <div className="text-[11px] md:text-xs leading-relaxed space-y-4 border-t border-white/10 pt-8" style={{ color: 'white' }}>
               <h4 className="font-bold text-sm mb-2" style={{ color: 'white' }}>Disclaimer</h4>
