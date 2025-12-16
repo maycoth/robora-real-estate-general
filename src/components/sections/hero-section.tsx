@@ -49,20 +49,14 @@ export default function HeroSection() {
           <span className="font-semibold text-[#FFC700]">3.11% APY</span> instead of sitting dormant.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 w-full sm:w-auto">
-            <Link
-              href="https://roborafinancial.com/book-a-demo"
-              className="group flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-semibold text-[#003D7A] bg-[#FFC700] rounded-lg hover:bg-[#FFD740] hover:-translate-y-0.5 shadow-lg shadow-[#FFC700]/25 transition-all duration-300 min-w-[200px]"
-            >
-              Schedule a Demo
-            </Link>
-          <Link
-            href="#how-it-works"
-            className="group flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-semibold text-white bg-transparent border-2 border-white/30 rounded-lg hover:bg-white/10 transition-all duration-300 min-w-[200px]"
-          >
-            See How It Works
-          </Link>
-        </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 w-full sm:w-auto">
+              <Link
+                href="https://roborafinancial.com/book-a-demo"
+                className="group flex items-center justify-center w-full sm:w-auto px-8 py-4 text-base font-semibold text-[#003D7A] bg-[#FFC700] rounded-lg hover:bg-[#FFD740] hover:-translate-y-0.5 shadow-lg shadow-[#FFC700]/25 transition-all duration-300 min-w-[200px]"
+              >
+                Schedule a Demo
+              </Link>
+          </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
           <div className="flex items-center gap-3 px-5 py-3 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
