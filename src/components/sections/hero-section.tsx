@@ -45,7 +45,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="mb-12 text-lg md:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed">
-            Your security deposits, operating accounts, and reserves and excess funds could be earning{" "}
+            Your security deposits, operating accounts, and excess funds could be earning{" "}
             <span className="font-semibold text-[#FFCA40]">3.11% APY</span> instead of sitting dormant.
           </p>
 
