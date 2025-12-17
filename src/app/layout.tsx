@@ -11,7 +11,7 @@ const inter = Inter({
 
 const siteUrl = "https://roborafinancial.com";
 const siteName = "Robora Financial";
-const siteDescription = "Turn idle cash into earning assets. Robora Financial helps apartment management companies earn up to 3.11% APY on security deposits, operating accounts, and reserves—with tens of millions in FDIC coverage.";
+const siteDescription = "Turn idle cash into earning assets. Robora Financial helps multifamily management companies earn up to 3.11% APY on security deposits, operating accounts, and reserves—with tens of millions in FDIC coverage.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   description: siteDescription,
   keywords: [
-    "apartment management",
+    "multifamily management",
     "cash management",
     "FDIC insured",
     "security deposits",

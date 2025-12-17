@@ -35,11 +35,11 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center justify-center px-6 pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 container mx-auto text-center max-w-[1280px]">
         <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
           <Building2 className="w-4 h-4 text-[#FFCA40]" />
-          <span className="text-sm font-medium text-white/90">Built for Apartment Management Companies</span>
+          <span className="text-sm font-medium text-white/90">Built for Multifamily Management Companies</span>
         </div>
 
         <h1 className="mb-6 font-bold leading-[1.08] tracking-tight text-white text-4xl md:text-5xl lg:text-[60px] max-w-5xl mx-auto">
-          Turn Idle Apartment Funds
+          Turn Idle Property Funds
           <br />
           <span className="text-[#FFCA40]">Into Earning Assets</span>
         </h1>
