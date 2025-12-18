@@ -7,11 +7,12 @@ export default function Footer() {
     <footer className="bg-[#013A6F] text-white pt-16 pb-8 md:pt-24 md:pb-12">
       <div className="container mx-auto px-6 md:px-10 lg:px-12 max-w-[1280px]">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-16 lg:mb-24">
-          
-            <div className="lg:w-5/12 space-y-8">
-              <Link href="/" className="block relative w-[142px] h-[40px]">
-                <Image 
-                  src="https://b0lsqh365peprp3p.public.blob.vercel-storage.com/Logos/robora%20logo.svg" 
+            
+              <div className="lg:w-5/12 space-y-8">
+                <Link href="/" className="block relative w-[170px] h-[48px]">
+                  <Image 
+                    src="https://b0lsqh365peprp3p.public.blob.vercel-storage.com/Logos/robora%20logo.svg" 
+
                   alt="Robora Financial" 
                   fill
                   className="object-contain"
