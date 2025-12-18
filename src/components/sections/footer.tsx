@@ -8,16 +8,16 @@ export default function Footer() {
       <div className="container mx-auto px-6 md:px-10 lg:px-12 max-w-[1280px]">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-16 lg:mb-24">
           
-          <div className="lg:w-5/12 space-y-8">
-            <Link href="/" className="block relative w-[142px] h-[40px]">
-              <Image 
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/29262e1d-6af1-47bb-ade3-3c354d057c65-roborafinancial-com/assets/svgs/RdWBCJhSiWMpYFL98WQguHlW28-1.svg" 
-                alt="Robora Financial" 
-                fill
-                className="object-contain"
-                priority
-              />
-            </Link>
+            <div className="lg:w-5/12 space-y-8">
+              <Link href="/" className="block relative w-[142px] h-[40px]">
+                <Image 
+                  src="https://b0lsqh365peprp3p.public.blob.vercel-storage.com/Logos/robora%20logo.svg" 
+                  alt="Robora Financial" 
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </Link>
             
             <div className="space-y-6 max-w-md">
               <h2 className="text-[28px] md:text-[32px] font-bold leading-[1.2] tracking-tight text-white">
