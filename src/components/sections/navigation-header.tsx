@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Menu } from 'lucide-react';
 
 const ASSETS = {
-  logo: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/29262e1d-6af1-47bb-ade3-3c354d057c65-roborafinancial-com/assets/svgs/RdWBCJhSiWMpYFL98WQguHlW28-1.svg"
+  logo: "https://b0lsqh365peprp3p.public.blob.vercel-storage.com/Logos/robora%20logo.svg"
 };
 
 export default function NavigationHeader() {
@@ -22,10 +22,11 @@ export default function NavigationHeader() {
     <header className={`fixed top-0 left-0 right-0 z-50 h-[80px] w-full px-6 lg:px-10 py-5 transition-all duration-300 ${
       scrolled ? "bg-[#013A6F]/90 backdrop-blur-md shadow-lg" : "bg-transparent"
     }`}>
-      <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between">
-        <Link href="https://roborafinancial.com/" className="relative block h-[40px] w-[142px] shrink-0 hover:opacity-90 transition-opacity">
-          <Image 
-            src={ASSETS.logo} 
+        <div className="mx-auto flex h-full max-w-[1280px] items-center justify-between">
+          <Link href="https://roborafinancial.com/" className="relative block h-[48px] w-[170px] shrink-0 hover:opacity-90 transition-opacity">
+            <Image 
+              src={ASSETS.logo} 
+
             alt="Robora Financial" 
             fill 
             className="object-contain"

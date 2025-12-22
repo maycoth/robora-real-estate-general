@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Check, Building2, Mail } from 'lucide-react';
 
 const features = [
@@ -11,31 +12,46 @@ const features = [
   "Unlimited transfers",
 ];
 
+const LOGO_DARK_MODE = "https://b0lsqh365peprp3p.public.blob.vercel-storage.com/Logos/Coloured%20Symbol%20-%20Dark%20Mode%20svg.svg";
+
 export default function PricingCTASection() {
   return (
     <section id="pricing" className="bg-[#F4F5F5] py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-10 max-w-[1280px]">
           <div className="relative overflow-hidden rounded-[24px] md:rounded-[32px] bg-[#013A6F] text-white shadow-xl">
           <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+            {/* Primary logo - top left */}
             <div 
-              className="absolute -left-[50px] -top-[50px] h-[300px] w-[300px] md:-left-[20px] md:-top-[60px] md:h-[500px] md:w-[500px] lg:h-[600px] lg:w-[600px]"
+              className="absolute -left-[60px] -top-[60px] w-[280px] h-[280px] md:-left-[40px] md:-top-[80px] md:w-[450px] md:h-[450px] lg:w-[550px] lg:h-[550px]"
               style={{
-                  backgroundColor: '#FFCA40',
-                borderRadius: '80px',
-                transform: 'rotate(15deg) translateX(-30%)',
-                opacity: 1,
+                transform: 'rotate(15deg)',
+                opacity: 0.18,
               }}
-            />
+            >
+              <Image
+                src={LOGO_DARK_MODE}
+                alt=""
+                fill
+                className="object-contain"
+                aria-hidden="true"
+              />
+            </div>
+            {/* Secondary logo - bottom right */}
             <div 
-              className="absolute -bottom-[100px] -left-[80px] h-[350px] w-[350px] md:-bottom-[150px] md:-left-[50px] md:h-[550px] md:w-[550px]"
+              className="absolute -bottom-[80px] -right-[60px] w-[200px] h-[200px] md:-bottom-[100px] md:-right-[40px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px]"
               style={{
-                  backgroundColor: '#013A6F',
-                borderRadius: '100px',
-                transform: 'rotate(45deg)',
-                opacity: 1,
-                zIndex: -1,
+                transform: 'rotate(-10deg)',
+                opacity: 0.12,
               }}
-            />
+            >
+              <Image
+                src={LOGO_DARK_MODE}
+                alt=""
+                fill
+                className="object-contain"
+                aria-hidden="true"
+              />
+            </div>
           </div>
 
           <div className="relative z-10 grid grid-cols-1 gap-12 p-8 md:p-12 lg:grid-cols-12 lg:p-16">
