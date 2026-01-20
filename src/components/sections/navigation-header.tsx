@@ -43,12 +43,12 @@ export default function NavigationHeader() {
               >
               Login
             </a>
-            <a
-              href="https://app.roborafinancial.com/signup"
+            <Link
+              href="#booking"
               className="inline-flex h-[48px] items-center justify-center rounded-[8px] bg-[#FFCA40] px-6 text-[16px] font-semibold text-[#013A6F] shadow-md transition-all hover:bg-[#EBAA00] hover:-translate-y-0.5"
             >
-            Get Started
-          </a>
+              Get Started
+            </Link>
         </div>
 
           <button 
