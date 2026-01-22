@@ -65,7 +65,7 @@ export default function PricingCTASection() {
                 </div>
 
                 <h2 className="text-3xl font-bold leading-[1.2] md:text-5xl lg:text-[52px]" style={{ color: 'white' }}>
-                  Start Earning More on Every Dollar You Manage
+                  Start Earning More on the Money You Manage
                 </h2>
 
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:gap-4">
@@ -78,9 +78,6 @@ export default function PricingCTASection() {
                       APY<sup className="text-sm">1</sup>
                     </span>
                   </div>
-                  <span className="text-lg font-normal opacity-90 md:text-xl">
-                    on all balances
-                  </span>
                 </div>
               </div>
 
