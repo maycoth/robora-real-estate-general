@@ -49,7 +49,7 @@ export default function CalculatorSection() {
             Your Deposits Are Working for Banks, Not You
           </h2>
           <p className="text-[#4B4F53] text-lg max-w-2xl mx-auto">
-            Most property managers leave millions in security deposits and reserves earning near-zero interest. See what you&apos;re missing.
+            Most CRE firms leave millions in operating capital and reserves earning near-zero interest. See what you&apos;re missing.
           </p>
         </div>
 

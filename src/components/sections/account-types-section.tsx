@@ -6,12 +6,12 @@ import { Shield, ArrowRightLeft, Landmark, Check } from 'lucide-react';
 const accountTypes = [
   {
     icon: Shield,
-    title: 'Security Deposit Accounts',
-    description: 'High-yield accounts purpose-built for tenant security deposits',
+    title: 'Operating Capital Accounts',
+    description: 'High-yield accounts purpose-built for your operating capital',
     features: [
       'Earn 3.11% APY on all deposits',
       'Tens of millions in FDIC coverage*',
-      'Easy compliance with state requirements',
+      'Easy compliance with regulatory requirements',
       'Separate tracking per property',
     ],
     color: '#FFCA40',
@@ -57,7 +57,7 @@ export default function AccountTypesSection() {
             Three Ways to Put Your Funds to Work
           </h2>
           <p className="text-[#4B4F53] text-lg max-w-2xl mx-auto">
-            Whether it&apos;s tenant deposits, operating cash, or reserve funds, we have a high-yield solution for every dollar you manage.
+            Whether it&apos;s operating capital, excess cash, or reserve funds, we have a high-yield solution for every dollar you manage.
           </p>
         </div>
 

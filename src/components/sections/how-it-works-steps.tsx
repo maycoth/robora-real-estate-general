@@ -18,7 +18,7 @@ const steps = [
     id: 3,
     icon: Wallet,
     title: "Transfer Funds",
-    description: "Move security deposits, reserves, or operating funds to your Robora accounts.",
+    description: "Move operating capital, reserves, or excess funds to your Robora accounts.",
   },
   {
     id: 4,

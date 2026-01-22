@@ -12,7 +12,7 @@ const inter = Inter({
 
 const siteUrl = "https://roborafinancial.com";
 const siteName = "Robora Financial";
-const siteDescription = "Turn idle cash into earning assets. Robora Financial helps multifamily management companies earn up to 3.11% APY on security deposits, operating accounts, and reserves—with tens of millions in FDIC coverage.";
+const siteDescription = "Turn idle cash into earning assets. Robora Financial helps commercial real estate firms earn up to 3.11% APY on operating capital, reserves, and excess funds—with tens of millions in FDIC coverage.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -22,15 +22,15 @@ export const metadata: Metadata = {
   },
   description: siteDescription,
   keywords: [
-    "multifamily management",
+    "commercial real estate",
     "cash management",
     "FDIC insured",
-    "security deposits",
+    "operating capital",
     "operating accounts",
     "reserve funds",
     "high yield savings",
-    "property management finance",
-    "multifamily finance",
+    "real estate cash management",
+    "CRE finance",
     "treasury management",
   ],
   authors: [{ name: siteName }],

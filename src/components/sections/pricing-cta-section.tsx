@@ -61,7 +61,7 @@ export default function PricingCTASection() {
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 rounded-full">
                   <Building2 className="w-4 h-4 text-[#FFCA40]" />
-                  <span className="text-sm font-medium">For Multifamily Management Companies</span>
+                  <span className="text-sm font-medium">For Commercial Real Estate Firms</span>
                 </div>
 
                 <h2 className="text-3xl font-bold leading-[1.2] md:text-5xl lg:text-[52px]" style={{ color: 'white' }}>

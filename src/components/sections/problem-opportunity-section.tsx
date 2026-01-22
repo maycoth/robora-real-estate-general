@@ -36,7 +36,7 @@ export default function ProblemOpportunitySection() {
             <span className="text-[#013A6F]">Not for You</span>
           </h2>
           <p className="text-lg text-[#4B4F53] max-w-2xl mx-auto">
-            Security deposits and reserves sitting in traditional bank accounts earn almost nothing.
+            Operating capital and reserves sitting in traditional bank accounts earn almost nothing.
             See what you&apos;re leaving on the table.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function ProblemOpportunitySection() {
           <div className="bg-[#F4F5F5] rounded-2xl p-8 md:p-10 mb-8">
               <div className="flex items-center gap-3 mb-6">
                 <Building2 className="w-6 h-6 text-[#013A6F]" />
-                <span className="text-lg font-semibold text-[#1A1B1D]">Your Total Security Deposits & Reserves</span>
+                <span className="text-lg font-semibold text-[#1A1B1D]">Your Total Operating Capital & Reserves</span>
               </div>
 
             <div className="flex flex-wrap gap-3 mb-6">

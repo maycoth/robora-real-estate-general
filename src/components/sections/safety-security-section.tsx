@@ -13,7 +13,7 @@ export default function SafetySecuritySection() {
             Tens of Millions in FDIC Protection
           </h2>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
-            As a property manager, you have a fiduciary responsibility to protect tenant deposits. We take that seriously.
+            As a fiduciary, you have a responsibility to protect company funds. We take that seriously.
           </p>
         </div>
 
