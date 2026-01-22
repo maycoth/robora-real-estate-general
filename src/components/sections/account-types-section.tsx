@@ -57,7 +57,7 @@ export default function AccountTypesSection() {
             One Platform, Three Ways to Use It
           </h2>
           <p className="text-[#4B4F53] text-lg max-w-2xl mx-auto">
-            Open a Robora high-yield savings account and connect it to your existing bank accounts. Use it for operating excess, reserves, or treasury—your choice.
+            Robora connects to your existing banks and helps you earn more on idle cash. Use it for operating excess, reserves, or treasury.
           </p>
         </div>
 
